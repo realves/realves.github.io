@@ -1,0 +1,63 @@
+body, html{
+    margin: 0;
+    height: 100%;
+}
+body{
+    background-image: url(../img/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-color: #0a0a0a;
+}
+
+/* parte central do site, conteudo geral */
+section{
+    font-family: "Noto Sans", sans-serif;
+    width: 70%;
+    min-height: 100%;
+    background-color: #fffffff2;
+    margin: 5em auto 2em auto;
+    padding: 4em;
+}
+section a{
+    text-decoration: none;
+    color: #a90101;
+}
+section a:hover{ color: #690101 }
+
+/* conteudo das divs dos projetos */
+.content{
+    height: 200px;
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px auto;
+    box-shadow: 0 0 25px #0a0a0a70;
+}
+.content a{
+    color: currentColor;
+}
+.content a:hover{
+    color: #a90101;
+    text-decoration: underline;
+}
+.thumbnail{
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+}
+.description{
+    padding: 5px 1em;
+    overflow: hidden;
+}
+
+/* formatacao do conteudo geral */
+h1, h2, h3, h4, h5, h6{ font-family: "Ubuntu", sans-serif }
+h1{
+    font-size: 2.2em;
+    align-content: center;
+    text-align: center;;
+}
+h2{ font-size: 1.6em }
+p{ text-align: center }
