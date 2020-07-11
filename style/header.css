@@ -1,0 +1,161 @@
+/* barra de menu */
+header{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #2d2d2d;
+    color: #e1e1e1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10;
+}
+header nav div img{
+    height: 50px;
+    width: 50px;
+}
+
+/* menu principal */
+nav{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0;
+}
+nav > ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: flex-start;
+    overflow: hidden;
+    font-family: "Rubik", sans-serif;
+    height: 100%;
+    z-index: 10;
+}
+
+/* menu principal e submenu */
+nav > ul li > a, #drop{
+    display: block;
+    padding: 1em;
+    text-decoration: none;
+    cursor: pointer;
+    color: #e1e1e1;
+    transition-property: all;
+    transition-duration: 250ms;
+    transition-timing-function: ease;
+    transition-delay: initial;
+}
+nav > ul li a:hover:not(.active), #drop:hover:not(.active){
+    background-color: #0a0a0a;
+    height: inherit;
+}
+.submenu{ font-family: "Cabin", sans-serif }
+
+/* pagina atual no menu */
+.active{
+    background-color: #e1e1e1;
+    height: inherit;
+    color: #2d2d2d;
+}
+[type="checkbox"], label#main, label#drop{ display: none }
+
+/* monitor */
+@media only screen and (min-width: 769px){
+    /* submenu */
+    nav ul li:hover > .submenu{
+        visibility: visible;
+        opacity: 1;
+        z-index: 10;
+    }
+    nav ul.submenu{
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        z-index: 9;
+        top: 100%;
+        list-style-type: none;
+        background-color: #2d2d2d;
+        padding: 0;
+        box-shadow: 5px 5px 10px #0a0a0a70;
+        transition-property: all;
+        transition-duration: 150ms;
+        transition-timing-function: linear;
+        transition-delay: initial;
+    }
+    nav ul.submenu li{ width: 200px }
+    nav ul.submenu a{ padding: 0.75em }
+}
+
+/* mobile */
+@media only screen and (max-width: 768px){
+    label{ margin: 0 }
+
+    /* menu principal */
+    nav > ul{
+        display: none;
+        margin: 0;
+        width: 100%;
+        top: 50px;
+        overflow: visible;
+    }
+    nav ul li{
+        display: block;
+        width: 100%;
+        text-align: left;
+        background-color: #2d2d2d;
+    }
+
+    /* botao para abrir o menu principal */
+    label#main{
+        display: block;
+        background-color: #2d2d2d;
+        width: 40px;
+        height: 40px;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 5px;
+    }
+    label#main:after{
+        content: "";
+        display: block;
+        width: 30px;
+        height: 5px;
+        background: #e1e1e1;
+        margin: 7px 5px;
+        box-shadow: 0 10px 0 #e1e1e1, 0 20px 0 #e1e1e1;
+    }
+    [type="checkbox"]#nav:checked ~ ul{
+        display: block;
+        z-index: 10;
+        position: absolute;
+        padding: 0;
+    }
+
+    /* submenu */
+    nav ul.submenu{
+        display: none;
+        list-style-type: none;
+        background-color: #2d2d2d;
+        padding: 0;
+    }
+    nav ul.submenu li{
+        width: 100%;
+        align-items: center;
+    }
+    nav ul.submenu a{ padding-left: 2.5em }
+
+    /* botao para abrir o submenu */
+    label#drop{
+        display: block;
+        height: inherit;
+    }
+    [type="checkbox"]#sub:checked ~ .submenu{
+        display: block;
+        z-index: 10;
+    }
+    .lidrop{ display: none }
+}
