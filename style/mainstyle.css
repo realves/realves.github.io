@@ -14,11 +14,8 @@ body{
 /* parte central do site, conteudo geral */
 section{
     font-family: "Noto Sans", sans-serif;
-    width: 70%;
     min-height: 100%;
     background-color: #fffffff2;
-    margin: 5em auto 2em auto;
-    padding: 4em;
 }
 section a{
     text-decoration: none;
@@ -28,7 +25,6 @@ section a:hover{ color: #690101 }
 
 /* conteudo das divs dos projetos */
 .content{
-    height: 200px;
     max-width: 100%;
     display: flex;
     justify-content: flex-start;
@@ -43,8 +39,6 @@ section a:hover{ color: #690101 }
     text-decoration: underline;
 }
 .thumbnail{
-    height: 200px;
-    width: 200px;
     overflow: hidden;
 }
 .description{
@@ -62,13 +56,24 @@ h1{
 h2{ font-size: 1.6em }
 p{ text-align: justify }
 
+/* monitor */
+@media only screen and (min-width: 769px){
+    section{
+        width: 70%;
+        margin: 5em auto 2em auto;
+        padding: 4em;
+    }
+    .content{ height: 200px }
+    .thumbnail{
+        height: 200px;
+        width: 200px;
+    }
+}
+
 /* mobile */
 @media only screen and (max-width: 768px){
-    body{ background-attachment: scroll }
-
     /* parte central do site, conteudo geral */
     section{
-        background-color: #e1e1e1;
         box-sizing: border-box;
         width: 100%;
         margin: 50px auto 0 auto;
