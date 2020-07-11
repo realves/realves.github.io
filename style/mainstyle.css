@@ -80,6 +80,13 @@ p{ text-align: justify }
 }
 
 /* projetos do portfolio */
+#mycanvas{
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 7px 7px 14px #0a0a0a70;
+}
+
 .project img{
     display: block;
     max-height: 450px;

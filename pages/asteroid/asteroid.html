@@ -17,7 +17,23 @@
 
     <style>
         canvas{
-            background-image: url;
+            background-image: url(img/space_bg.jpg);
+            background-attachment: local;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        @media only screen and (max-width: 768px){
+            #mycanvas{
+                display: none;
+            }
+        }
+
+        @media only screen and (min-width: 769px){
+            .project > img:first-of-type{
+                display: none;
+            }
         }
     </style>
 </head>
@@ -54,6 +70,8 @@
     <section class="project">
         <h1>Desvie dos asteróides!</h1>
 
+        <canvas id="mycanvas"></canvas><br>
+
         <img src="../../img/asteroid.png" title="Criação: 31/05/2017" alt="Print do jogo"><br>
 
         <p>Jogo básico para aprender a fazer a colisão de 2 objetos em Javascript.</p><br>
@@ -80,25 +98,6 @@
         </ul>
     </section>
 
-
-    <section class="project">
-        <h1>Desvie dos asteróides!</h1>
-
-
-        <img src="../img/icon.png" title="Criação: 04/04/17" alt="Logo do site"/><br/>
-        
-        <p>Imagem utilizada como logo deste site.</p><br/>
-        
-        <h2>Justificativas</h2>
-        <p>Esta imagem foi feita com o objetivo único de ser o logo do site, logo após o fracasso do <a href="background.html" title="Site background">logo anterior</a>.</p><br/>
-        
-        <h2>Programas utilizados</h2>
-        <ul><li><a href="https://www.gimp.org/" title="Site oficial GIMP" target="_blank">GIMP</a></li></ul><br/>
-        
-        <h2>Referências</h2>
-        <img src="../img/background.png" alt="Referência"/><br/>
-        
-        <p>Sem a <a href="background.html" title="Site background">primeira tentativa</a>, este logo não existiria. Fiz o mais próximo que consegui, mas removendo todos os efeitos de iluminação e mantendo uma espessura uniforme.</p>
-    </section>
+    <script src="js/js.js" type="text/javascript"></script>
 </body>
 </html>
