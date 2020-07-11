@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Escrevendo o nickname - StyleDead</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <link href="../img/icon.png" rel="icon"/>
+    <link href="../style/mainstyle.css" type="text/css" rel="stylesheet"/>
+    <link href="../style/header.css" type="text/css" rel="stylesheet"/>
+    
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet"/>
+</head>
+<body>
+    <!-- cabecalho do site -->
+    <header>
+        <nav>
+            <div><a href="../index.html" title="Página inicial"><img src="../img/logo.png" alt="LOGO"/></a></div>
+            <!-- mobile, drop down do menu principal -->
+            <input type="checkbox" id="nav"/>
+            <label id="main" for="nav"></label>
+            
+            <ul>
+                <li><a href="../index.html" title="Página inicial">Início</a></li>
+                <li>
+                    <!-- mobile, drop down de submenu -->
+                    <input type="checkbox" id="sub"/>
+                    <label id="drop" for="sub" title="Portfólio">Portfólio +</label>
+                    
+                    <a href="javascript:void(0)" title="Portfólio" class="lidrop">Portfólio +</a>
+                    <ul class="submenu">
+                        <li><a href="games.html" title="Jogos">Jogos</a></li>
+                        <li><a href="images.html" title="Imagens">Imagens</a></li>
+                        <li><a href="animations.html" title="Animações">Animações</a></li>
+                        <li><a href="renders.html" title="Modelos 3D">Modelos 3D</a></li>
+                    </ul>
+                </li>
+                <li><a href="aboutme.html" title="Sobre mim">Sobre mim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- secao central do site, com o conteudo principal do mesmo -->
+    <section class="project">
+        <h1>Escrevendo o nickname</h1>
+        <img src="../img/nickname_writed.gif" title="Criação: 20/04/17" alt="Escrevendo o nickname"/><br/>
+        
+        <p>Pequena animação, no formato GIF, em que o nickname StyleDead é escrito.</p><br/>
+        
+        <h2>Justificativas</h2>
+        <p>O meu objetivo com este projeto foi o de aprender a criar um arquivo no formato GIF através do GIMP, já que eu nunca tinha feito um antes. Além de obter um conteúdo inicial para o meu portfólio.</p><br/>
+        
+        <h2>Programas utilizados</h2>
+        <ul><li><a href="https://www.gimp.org/" title="Site oficial GIMP" target="_blank">GIMP</a></li></ul><br/>
+        
+        <h2>Referências</h2>
+        <img src="http://i93.photobucket.com/albums/l43/jillybride/JustMommies/writingtextblinkietut.gif~original" alt="Referência"/><br/>
+        
+        <p>Para fazer este GIF, eu utilizei um <a href="http://www.justmommies.com/forums/f262-blinkie-tutorials/1898107-gimp-tutorial-writing-text-animation.html" title="Jillylicious" target="_blank">tutorial da Jillylicious</a> de como fazer uma animação de um texto sendo escrito.</p>
+    </section>
+</body>
+</html>

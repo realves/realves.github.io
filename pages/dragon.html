@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dragão - StyleDead</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <link href="../img/icon.png" rel="icon"/>
+    <link href="../style/mainstyle.css" type="text/css" rel="stylesheet"/>
+    <link href="../style/header.css" type="text/css" rel="stylesheet"/>
+    
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet"/>
+</head>
+<body>
+    <!-- cabecalho do site -->
+    <header>
+        <nav>
+            <div><a href="../index.html" title="Página inicial"><img src="../img/logo.png" alt="LOGO"/></a></div>
+            <!-- mobile, drop down do menu principal -->
+            <input type="checkbox" id="nav"/>
+            <label id="main" for="nav"></label>
+            
+            <ul>
+                <li><a href="../index.html" title="Página inicial">Início</a></li>
+                <li>
+                    <!-- mobile, drop down de submenu -->
+                    <input type="checkbox" id="sub"/>
+                    <label id="drop" for="sub" title="Portfólio">Portfólio +</label>
+                    
+                    <a href="javascript:void(0)" title="Portfólio" class="lidrop">Portfólio +</a>
+                    <ul class="submenu">
+                        <li><a href="games.html" title="Jogos">Jogos</a></li>
+                        <li><a href="images.html" title="Imagens">Imagens</a></li>
+                        <li><a href="animations.html" title="Animações">Animações</a></li>
+                        <li><a href="renders.html" title="Modelos 3D">Modelos 3D</a></li>
+                    </ul>
+                </li>
+                <li><a href="aboutme.html" title="Sobre mim">Sobre mim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- secao central do site, com o conteudo principal do mesmo -->
+    <section class="project">
+        <h1>Dragão</h1>
+        <img src="../img/dragon.png" title="Criação: 11/04/17" alt="Dragão Chinês"/><br/>
+        
+        <p>Tentativa de fazer um dragão chinês. Este projeto está inacabado, ainda faltam os membros, chifres e asas. Pretento terminar futuramente quando adquirir mais experiência em modelagem.</p><br/>
+        
+        <h2>Justificativas</h2>
+        <p>Este projeto foi iniciado a pedido do meu professor de Computação Gráfica, Ismar Frango. O objetivo deste projeto era o de fazer o corpo de um dragão, através da extrusão de uma curva, mas eu acabei por fazer a cabeça para não ficar apenas um tubo em meio do nada.</p><br/>
+        
+        <h2>Programas utilizados</h2>
+        <ul><li><a href="http://www.autodesk.com.br/products/maya/overview" title="Site oficial Maya" target="_blank">Maya</a></li></ul><br/>
+        
+        <h2>Referências</h2>
+        
+        <img src="../img/dragon_reference1.jpg" alt="Referência principal"/><br/>
+        
+        <p>Esta é a imagem que o professor deu como parte do enunciado. A mesma foi a referência para as curvas do corpo.</p><br/>
+        
+        <div class="slider">
+            <input type="radio" name="slide_switch" id="switch1" checked="checked"/>
+            <label for="switch1">
+                <img src="../img/dragon_reference2.jpg" height="100px"/>
+            </label>
+            <img src="../img/dragon_reference2.jpg" alt="Referência 2"/>
+            
+            <input type="radio" name="slide_switch" id="switch2"/>
+            <label for="switch2">
+                <img src="../img/dragon_reference3.jpg" height="100px"/>
+            </label>
+            <img src="../img/dragon_reference3.jpg" alt="Referência 3"/>
+        </div>
+        
+        <p>Para fazer a cabeça, foram necessárias duas imagens  como base do formato e proporção.</p>
+    </section>
+</body>
+</html>

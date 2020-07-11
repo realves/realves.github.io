@@ -78,3 +78,53 @@ p{ text-align: justify }
         width: 100px;
     }
 }
+
+/* projetos do portfolio */
+.project img{
+    display: block;
+    max-height: 450px;
+    max-width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    box-shadow: 7px 7px 14px #0a0a0a70;
+}
+.project ul{ list-style-type: circle }
+
+/* slider de imagens */
+.slider{
+    width: 100%;
+    position: relative;
+    padding-top: 450px;
+    display: flex;
+    justify-content: center;
+}
+.slider > img{
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.5s;
+}
+.slider input[name="slide_switch"]{ display: none }
+.slider label{
+    margin: 20px 0 0 20px;
+    border: 3px solid #999;
+    cursor: pointer;
+    transition: all 0.5s;
+    opacity: 0.5;
+}
+.slider label img{ display: block }
+.slider input[name="slide_switch"]:checked + label{
+    border-color: #666;
+    opacity: 1;
+}
+.slider input[name="slide_switch"] ~ img{
+    opacity: 0;
+    transform: scale(1.1)
+}
+.slider input[name="slide_switch"]:checked + label + img{
+    opacity: 1;
+    transform: scale(1);
+}

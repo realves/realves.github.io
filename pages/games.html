@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jogos - StyleDead</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <link href="../img/icon.png" rel="icon"/>
+    <link href="../style/mainstyle.css" type="text/css" rel="stylesheet"/>
+    <link href="../style/header.css" type="text/css" rel="stylesheet"/>
+    
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet"/>
+</head>
+<body>
+    <!-- cabecalho do site -->
+    <header>
+        <nav>
+            <div><a href="../index.html" title="Página inicial"><img src="../img/logo.png" alt="LOGO"/></a></div>
+            <!-- mobile, drop down do menu principal -->
+            <input type="checkbox" id="nav"/>
+            <label id="main" for="nav"></label>
+            
+            <ul>
+                <li><a href="../index.html" title="Página inicial">Início</a></li>
+                <li>
+                    <!-- mobile, drop down de submenu -->
+                    <input type="checkbox" id="sub"/>
+                    <label id="drop" for="sub" title="Portfólio">Portfólio +</label>
+                    
+                    <a href="javascript:void(0)" title="Portfólio" class="lidrop">Portfólio +</a>
+                    <ul class="submenu">
+                        <li><a href="games.html" class="active" title="Jogos">Jogos</a></li>
+                        <li><a href="images.html" title="Imagens">Imagens</a></li>
+                        <li><a href="animations.html" title="Animações">Animações</a></li>
+                        <li><a href="renders.html" title="Modelos 3D">Modelos 3D</a></li>
+                    </ul>
+                </li>
+                <li><a href="aboutme.html" title="Sobre mim">Sobre mim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- secao central do site, com o conteudo principal do mesmo -->
+    <section>
+        <h1>Jogos</h1>
+        
+        <div class="content">
+            <a href="lorem_ipsum.html" title="Lorem ipsum"><img src="../thumb/lorem_ipsum_reference.jpg" class="thumbnail" alt="Thumbnail"/></a>
+            <div class="description">
+                <a href="lorem_ipsum.html" title="Lorem ipsum"><h2>Lorem ipsum</h2></a>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque sed molestie purus, eu dictum mauris. Nulla facilisi. Proin et tincidunt est. Nunc cursus purus et viverra commodo. Nulla sed vulputate lectus, et dignissim eros. Donec viverra metus nec vestibulum tincidunt. Suspendisse at lectus sed metus feugiat consequat. Nullam vitae viverra enim. Nam quis vestibulum nunc.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

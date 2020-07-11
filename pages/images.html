@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Imagens - StyleDead</title>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <link href="../img/icon.png" rel="icon"/>
+    <link href="../style/mainstyle.css" type="text/css" rel="stylesheet"/>
+    <link href="../style/header.css" type="text/css" rel="stylesheet"/>
+    
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet"/>
+</head>
+<body>
+    <!-- cabecalho do site -->
+    <header>
+        <nav>
+            <div><a href="../index.html" title="Página inicial"><img src="../img/logo.png" alt="LOGO"/></a></div>
+            <!-- mobile, drop down do menu principal -->
+            <input type="checkbox" id="nav"/>
+            <label id="main" for="nav"></label>
+            
+            <ul>
+                <li><a href="../index.html" title="Página inicial">Início</a></li>
+                <li>
+                    <!-- mobile, drop down de submenu -->
+                    <input type="checkbox" id="sub"/>
+                    <label id="drop" for="sub" title="Portfólio">Portfólio +</label>
+                    
+                    <a href="javascript:void(0)" title="Portfólio" class="lidrop">Portfólio +</a>
+                    <ul class="submenu">
+                        <li><a href="games.html" title="Jogos">Jogos</a></li>
+                        <li><a href="images.html" class="active" title="Imagens">Imagens</a></li>
+                        <li><a href="animations.html" title="Animações">Animações</a></li>
+                        <li><a href="renders.html" title="Modelos 3D">Modelos 3D</a></li>
+                    </ul>
+                </li>
+                <li><a href="aboutme.html" title="Sobre mim">Sobre mim</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- secao central do site, com o conteudo principal do mesmo -->
+    <section>
+        <h1>Imagens</h1><br/>
+        
+        <div class="content">
+            <a href="logo.html" title="Site logo"><img src="../thumb/logo.png" class="thumbnail" alt="Thumbnail"/></a>
+            <div class="description">
+                <a href="logo.html" title="Site logo"><h2>Logo do site</h2></a>
+                <p>Imagem utilizada como logo deste site.</p>
+            </div>
+        </div><br/>
+        
+        <div class="content">
+            <a href="background.html" title="Site background"><img src="../thumb/background.png" class="thumbnail" alt="Thumbnail"/></a>
+            <div class="description">
+                <a href="background.html" title="Site background"><h2>Site background</h2></a>
+                <p>Imagem anteriormente utilizada como plano de fundo deste site.</p>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
