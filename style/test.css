@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* corpo */
+html, body{
+    height: 100%;
+    font-family: "Kalam", sans-serif;
+    font-size: 18px;
+}
+
+/* fundo */
+.bg{
+    position: relative;
+    opacity: .75;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 80%;
+}
+
+/* link para o portfolio */
+#portfolio{
+    position: absolute;
+    top: 5%;
+    right: 2%;
+    text-align: center;
+}
+#portfolio span.title{
+    background-color: #fafafa;
+    padding: 15px;
+    color: #000;
+    font-size: 1em;
+    letter-spacing: 5px;
+}
+
+/* titulos */
+.text{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+}
+.text span.title{
+    background-color: #000;
+    padding: 18px;
+    color: #fafafa;
+    font-size: 1.5em;
+    letter-spacing: 10px;
+}
+
+/* blocos de texto */
+.content{
+    color: #555;
+    background-color: #fafafa;
+    text-align: justify;
+    padding: 3em 10em;
+}
+
+h1{ text-align: center }
+
+a{
+    text-decoration: none;
+}

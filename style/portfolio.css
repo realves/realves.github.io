@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    height: 100%;
+    font-family: "Kalam", sans-serif;
+    font-size: 18px;
+}
+
+#bg{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .75;
+    min-height: 50%;
+    z-index: -1;
+}
+
+.content{
+    color: #555;
+    background-color: #fafafa;
+    padding: 3em 7em;
+}
+
+.project{
+    height: 200px;
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    margin: 10px auto;
+    box-shadow: 0 0 25px #0a0a0a70;
+    color: currentColor;
+    text-decoration: none;
+}
+.project:hover{
+    color: #111;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 0 20px #000a;
+}
+.thumbnail{
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+}
+.description{
+    padding: 5px 1em;
+    overflow: hidden;
+}
+
+/* formatacao do conteudo geral */
+h1{
+    font-size: 2.2em;
+    align-content: center;
+    text-align: center;;
+}
+h2{
+    font-size: 1.6em;
+    padding-top: .8em;
+    padding-bottom: .8em;
+}
+p{ text-align: justify }
+
+@media only screen and (max-width: 768px){
+    .content{ padding: 3em 1em }
+    .project{ height: 100px }
+    .thumbnail{
+        height: 100px;
+        width: 100px;
+    }
+}

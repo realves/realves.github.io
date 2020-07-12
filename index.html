@@ -1,83 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <title>Página inicial - Realves</title>
+    <title>Página inicial - Renato Leite</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link href="img/icon.png" rel="icon">
-    <link href="style/mainstyle.css" type="text/css" rel="stylesheet">
-    <link href="style/header.css" type="text/css" rel="stylesheet">
+    <link href="style/test.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet"/>
 
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet"/>
 </head>
 <body>
-    <!-- cabecalho do site -->
-    <header>
-        <nav>
-            <div><a href="index.html" title="Página inicial"><img src="img/logo.png" alt="logo"></a></div>
-            <!-- mobile, drop down do menu principal -->
-            <input type="checkbox" id="nav">
-            <label id="main" for="nav"></label>
+    <div class="bg" style="background-image: url(img/background.png)">
+        <a href="pages/games.html" id="portfolio">
+            <span class="title">Ir para o portfólio</span>
+        </a>
+        <div class="text">
+            <span class="title">RENATO LEITE</span>
+        </div>
+    </div>
+    <div class="content">
+        <h1>Sobre mim</h1>
+        <h2>Quem sou eu</h2>
+        <p>Olá! Me chamo Renato Alves Leite, tenho 21 anos, moro em São Paulo - Brasil e sou formado no curso de Jogos Digitais na Instituição Cruzeiro do Sul.</p>
+        <h2>Minha carreira</h2>
+        <p>Infelizmente, estou desempregado no momento e ainda não possuo experiência profissional, tendo como conhecimento apenas minha graduação e o que adiquiri através de meus projetos pessoais. Pretendo aprimorar minhas habilidades de criador de conteúdo digital e me preparar para o mercado de trabalho na área de desenvolvimento de jogos digitais ou web.</p>
+        <h2>Por que ser um desenvolvedor?</h2>
+        <p>Desde pequeno eu me interesso pela tecnologia, principalmente através de jogos, e com o passar do tempo esse interesse foi expandindo não somente pelo produto final, mas pela criação do mesmo. Através de um curso de TI no SENAI, a lógica de programação me foi apresentada e, a partir daí, minha vontade de aprender mais sobre o assunto só aumentou.</p>
+        <p>Comecei a criar algumas páginas em HTML, modelos 3D no Blender, e até mesmo meus próprios projetos na Unity, mas nada muito avançado. Até o dia que ingressei na faculdade, no curso de Desenvolvimento de Jogos Digitais, onde comecei a fazer projetos mais elaborados. Inclusive, este site foi criado como um projeto dentro do curso, para mostrar meu portfólio.</p>
+    </div>
+    <div class="bg" style="background-image: url(img/asteroid.png)">
 
-            <ul>
-                <li><a href="index.html" class="active" title="Página inicial">Início</a></li>
-                <li>
-                    <!-- mobile, drop down de submenu -->
-                    <input type="checkbox" id="sub">
-                    <label id="drop" for="sub" title="Portfólio">Portfólio +</label>
-
-                    <a href="javascript:void(0)" title="Portfólio" class="lidrop">Portfólio +</a>
-                    <ul class="submenu">
-                        <li><a href="pages/games.html" title="Jogos">Jogos</a></li>
-                        <li><a href="pages/images.html" title="Imagens">Imagens</a></li>
-                        <li><a href="pages/animations.html" title="Animações">Animações</a></li>
-                        <li><a href="pages/renders.html" title="Modelos 3D">Modelos 3D</a></li>
-                    </ul>
-                </li>
-                <li><a href="pages/aboutme.html" title="Sobre Mim">Sobre mim</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <!-- secao central do site, com o conteudo principal do mesmo -->
-    <section>
-        <h1>Timeline de projetos</h1><br>
-
-        <div class="content">
-            <a href="pages/dragon.html" title="Dragão"><img src="thumb/dragon.png" class="thumbnail" alt="Thumbnail"></a>
-            <div class="description">
-                <a href="pages/dragon.html" title="Dragão"><h2>Dragão</h2></a>
-                <p>Tentativa de fazer um dragão chinês (inacabado).</p>
-            </div>
-        </div><br>
-
-        <div class="content">
-            <a href="pages/write_gif.html" title="Escrevendo o nickname"><img src="thumb/nickname_writed.png" class="thumbnail" alt="Thumbnail"></a>
-            <div class="description">
-                <a href="pages/write_gif.html" title="Escrevendo o nickname"><h2>Escrevendo o nickname</h2></a>
-                <p>Pequena animação, no formato GIF, em que o nickname "StyleDead" é escrito.</p>
-            </div>
-        </div><br>
-            
-        <div class="content">
-            <a href="pages/logo.html" title="Site logo"><img src="thumb/logo.png" class="thumbnail" alt="Thumbnail"/></a>
-            <div class="description">
-                <a href="pages/logo.html" title="Site logo"><h2>Logo do site</h2></a>
-                <p>Imagem utilizada como logo deste site.</p>
-            </div>
-        </div><br/>
-            
-        <div class="content">
-            <a href="pages/background.html" title="Site background"><img src="thumb/background.png" class="thumbnail" alt="Thumbnail"/></a>
-            <div class="description">
-                <a href="pages/background.html" title="Site background"><h2>Site background</h2></a>
-                <p>Imagem anteriormente utilizada como plano de fundo deste site.</p>
-            </div>
-        </div><br/>
-    </section>
+    </div>
 </body>
 </html>

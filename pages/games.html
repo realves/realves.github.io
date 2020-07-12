@@ -1,59 +1,45 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-    <title>Jogos - Realves</title>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    
-    <link href="../img/icon.png" rel="icon"/>
-    <link href="../style/mainstyle.css" type="text/css" rel="stylesheet"/>
-    <link href="../style/header.css" type="text/css" rel="stylesheet"/>
-    
-    <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet"/>
-    <link href="https://fonts.googleapis.com/css?family=Cabin" rel="stylesheet"/>
+    <title>Jogos - Renato Leite</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="../img/icon.png" rel="icon">
+    <link href="../style/portfolio.css" type="text/css" rel="stylesheet">
+    <link href="../style/newheader.css" type="text/css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Kalam" rel="stylesheet"/>
 </head>
 <body>
-    <!-- cabecalho do site -->
+    <!-- menu -->
     <header>
-        <nav>
-            <div><a href="../index.html" title="Página inicial"><img src="../img/logo.png" alt="LOGO"/></a></div>
-            <!-- mobile, drop down do menu principal -->
-            <input type="checkbox" id="nav"/>
-            <label id="main" for="nav"></label>
-            
-            <ul>
-                <li><a href="../index.html" title="Página inicial">Início</a></li>
-                <li>
-                    <!-- mobile, drop down de submenu -->
-                    <input type="checkbox" id="sub"/>
-                    <label id="drop" for="sub" title="Portfólio">Portfólio +</label>
-                    
-                    <a href="javascript:void(0)" title="Portfólio" class="lidrop">Portfólio +</a>
-                    <ul class="submenu">
-                        <li><a href="games.html" class="active" title="Jogos">Jogos</a></li>
-                        <li><a href="images.html" title="Imagens">Imagens</a></li>
-                        <li><a href="animations.html" title="Animações">Animações</a></li>
-                        <li><a href="renders.html" title="Modelos 3D">Modelos 3D</a></li>
-                    </ul>
-                </li>
-                <li><a href="aboutme.html" title="Sobre mim">Sobre mim</a></li>
-            </ul>
+        <nav id="mobile">
+            <a href="../index.html">Início</a>
+            <a href="javascript:void(0)">Jogos</a>
+            <label id="mobilemenu" for="nav">\/</label>
+            <input type="checkbox" id="nav">
+        </nav>
+
+        <nav id="desktop">
+            <a href="../index.html" class="menu">Início</a>
+            <a href="javascript:void(0)" class="menu" id="active">Jogos</a>
+            <a href="images.html" class="menu">Imagens</a>
+            <a href="renders.html" class="menu">Modelos 3D</a>
+            <a href="animations.html" class="menu">Animações</a>
         </nav>
     </header>
 
-    <!-- secao central do site, com o conteudo principal do mesmo -->
-    <section>
-        <h1>Jogos</h1>
-        
-        <div class="content">
-            <a href="asteroid/asteroid.html" title="Asteroid game"><img src="../thumb/asteroid2.png" class="thumbnail" alt="Thumbnail"/></a>
+    <div id="bg" style="background-image: url(../img/asteroid.png);"></div>
+
+    <!-- conteudo -->
+    <div class="content">
+        <a href="asteroid/asteroid.html" class="project">
+            <div><img src="../thumb/asteroid2.png" class="thumbnail"></div>
             <div class="description">
-                <a href="asteroid/asteroid.html" title="Asteroid game"><h2>Desvie dos asteróides!</h2></a>
-                <p>Jogo básico para aprender a fazer a colisão de 2 objetos em Javascript.</p>
+                <h2>Desvie dos asteróides!</h2>
+                <p>Jogo básico para aprender a fazer a colisão de 2 objetos em Javascript</p>
             </div>
-        </div>
-    </section>
+        </a>
+    </div>
 </body>
 </html>
