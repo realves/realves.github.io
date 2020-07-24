@@ -60,7 +60,7 @@ function ball_reset(index)
     ball[index].yPos = Math.floor(canvas.height / 2) - Math.floor(ball[index].height / 2)
 
     //reconfigura a velocidade
-    ball[index].realSpd = canvas.height * .0075
+    ball[index].realSpd = gamemode === CLASSIC ? canvas.height * .0075 : canvas.height * .01
     
     //redefine o angulo da bola, tendo a direcao contraria da outra
     if(ball[ (index + 1) % 2 ].turn % 2 === 0)
@@ -73,8 +73,6 @@ function ball_reset(index)
         ball[index].angle = Math.random() * (1.3 - .7) + .7
         ball[index].turn = 0
     }
-
-    console.log(ball[0].turn, ball[1].turn)
 }
 
 function ball_movement()
